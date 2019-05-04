@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <stdlib.h>
+#include <math.h>
 using namespace std;
 
 // Defining the public functions
@@ -103,6 +104,7 @@ void heat_solver::sine_initial_condition() {
 
 	int i;
 	const double pi = 4.0*atan(1.0);
+
 
 	for(i = 0; i < n_pts; i++) {
 		u[i][0] = sin(pi*x[i]);
