@@ -1,6 +1,7 @@
 #include "heat_equation.h"
 #include "heat_solver.h"
 #include "grid.h"
+#include "Inputs.h"
 
 #include <iostream>
 #include <stdlib.h>
@@ -11,6 +12,9 @@ using namespace std;
 
 int main() 
 {
+
+	Inputs inputs(50);
+	cout << inputs.alpha << endl;
 
 	// Inputs
 	int nt_steps = 50;
