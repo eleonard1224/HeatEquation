@@ -2,14 +2,18 @@
 #define _GRID__H
 
 #include "heat_equation.h"
+#include "Inputs.h"
+#include <vector>
 
-class grid {
+class Grid : virtual public Inputs {
 
 public:
 
 	// Functions
 
-	grid(solver_inputs *solverInputs);
+//	grid(solver_inputs *solverInputs);
+
+	Grid();
 
 	~grid();
 
@@ -23,20 +27,25 @@ protected:
 
 	// Variables
 
-	int nt_steps;
+/*	int nt_steps;
 	double t0;
 	double tend;
 	double alpha;
 	int n_pts;
 	double x_left;
-	double x_right;
-	double *x;
+	double x_right;*/
+//	double *x;
 
 private:
+
+	// Variables
+	vector<double> x;
 
 	// Methods
 
 	void grid_points(solver_inputs *solverInputs);
+
+	friend class heat_solver;  // So that heat_solver can access x
 
 };
 

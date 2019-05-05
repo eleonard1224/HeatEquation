@@ -1,12 +1,21 @@
-#include "grid.h"
-
 #include <iostream>
 #include <stdlib.h>
+
+#include "Grid.h"
 using namespace std;
 
 // Defining the public functions
 
-grid::grid(solver_inputs *solverInputs) {
+
+Grid::Grid() {
+
+	x = NULL;
+	x = (double *) calloc(solverInputs->n_pts, sizeof *x);
+
+}
+
+
+/*grid::grid(solver_inputs *solverInputs) {
 
 	nt_steps = solverInputs->nt_steps;
 	t0 = solverInputs->t0;
@@ -19,7 +28,7 @@ grid::grid(solver_inputs *solverInputs) {
 	x = NULL;
 	x = (double *) calloc(solverInputs->n_pts, sizeof *x);
 
-}
+}*/
 
 grid::~grid() {
 

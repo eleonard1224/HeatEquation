@@ -1,20 +1,23 @@
 #include "heat_equation.h"
 #include "heat_solver.h"
-#include "grid.h"
 #include "Inputs.h"
 
 #include <iostream>
 #include <stdlib.h>
+
+#include "Grid.h.original"
 using namespace std;
 
 // Going to test committing changes to local repository and pushing to remote repository
 // Testing branch again
 
+
+
 int main() 
 {
 
 	Inputs inputs(50);
-	cout << inputs.alpha << endl;
+/*	cout << inputs.alpha << endl;
 
 	// Inputs
 	int nt_steps = 50;
@@ -48,7 +51,7 @@ int main()
 
 	hs->print_solver();
 
-	free(solverInputs);
+	free(solverInputs);*/
 		
     return 0;
 }

@@ -1,10 +1,10 @@
 #ifndef _HEAT_SOLVER__H
 #define _HEAT_SOLVER__H
 
-#include "heat_equation.h"
-#include "grid.h"
-
 #include <stdio.h>
+
+#include "Grid.h.original"
+#include "heat_equation.h.original"
 
 class heat_solver : public grid {
 

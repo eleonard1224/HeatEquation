@@ -1,9 +1,4 @@
-/*
- * Inputs.cpp
- *
- *  Created on: May 4, 2019
- *      Author: eleonard
- */
+// For the Inputs class
 
 #include "Inputs.h"
 
@@ -20,5 +15,3 @@ Inputs::Inputs(int nt_steps, double t0, double tend, double alpha,
 	this->x_left = x_left;
 	this->x_right = x_right;
 }
-
-
